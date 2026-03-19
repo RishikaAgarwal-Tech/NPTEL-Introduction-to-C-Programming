@@ -17,8 +17,15 @@ int main ()
     c = a * b ;
     printf ("The multiplication of the two numbers is %d\n", c);
 
-    c = a / b ;
-    printf ("The division of the two numbers is %d\n", c);
+    if (b != 0)
+    {
+        c = a / b ;
+        printf ("The division of the two numbers is %d\n", c);
+    }
+   else 
+   {
+        printf ("Error") ;
+   }
 
     return 0 ;
 }
