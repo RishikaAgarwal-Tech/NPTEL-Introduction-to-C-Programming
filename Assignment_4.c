@@ -6,7 +6,7 @@ int main ()
     int factorial=1;
 
     printf ("Enter a number :");
-    scanf ("%d", &num) ;
+    scanf ("%d", &num);
 
     for (i=1;i<=num;i++)
     {
