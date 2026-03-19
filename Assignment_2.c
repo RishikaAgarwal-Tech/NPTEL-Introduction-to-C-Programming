@@ -2,25 +2,26 @@
 # include <stdio.h>
 int main ()
 {
-    int a, b, c ;
+    int a ;
+    float b, c ;
     printf ("Enter the first number: ") ;
     scanf ("%d", &a) ;
     printf ("Enter the second number: ") ;
-    scanf ("%d", &b) ;
+    scanf ("%e", &b) ;
 
     c = a + b ;
-    printf ("The addition of the numbers is %d\n", c) ;
+    printf ("The addition of the numbers is %.0f\n", c) ;
 
     c = a - b ;
-    printf ("The subtraction of the two numbers is %d\n", c) ;
+    printf ("The subtraction of the two numbers is %.0f\n", c) ;
 
     c = a * b ;
-    printf ("The multiplication of the two numbers is %d\n", c);
+    printf ("The multiplication of the two numbers is %.0f\n", c);
 
     if (b != 0)
     {
         c = a / b ;
-        printf ("The division of the two numbers is %d\n", c);
+        printf ("The division of the two numbers is %.2f\n", c);
     }
    else 
    {
