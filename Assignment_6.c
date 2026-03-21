@@ -1,5 +1,6 @@
 /*Write a C program to calcuate average of three numbers using function*/
 # include <stdio.h>
+
 float average (int a, int b, int c)
     {
         float avg ;
@@ -8,10 +9,10 @@ float average (int a, int b, int c)
     }
     int main ()
     {
-        int num1, int num2, int num3;
+        int num1, num2, num3;
         float result;
         printf ("Enter three numbers :");
-        scanf ("%d %d %d", num1, num2, num3);
+        scanf ("%d %d %d", &num1, &num2, &num3);
         result = average(num1, num2, num3);
 
         printf ("The average is %.2f", result);
